@@ -16,6 +16,7 @@ df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
 
 # Initialize Dash app
 app = dash.Dash(__name__)
+server =app.server
 app.title = "Sales Dashboard"
 
 # Layout
@@ -112,3 +113,4 @@ def update_graphs(start_date, end_date):
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+
