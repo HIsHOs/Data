@@ -110,7 +110,6 @@ def update_graphs(start_date, end_date):
 
     return fig_time, fig_products, fig_country, fig_customers
 
-# Run the app
-if __name__ == '__main__':
-    app.run(debug=True)
+
+
 
